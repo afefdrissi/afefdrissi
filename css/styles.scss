@@ -1,0 +1,112 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*,
+:before,
+:after {
+          box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    margin: 0;
+
+}
+.theme{
+    --light:#fff;$light :var(--light);
+    --dark:#1f1f1f; $dark :var(--dark);
+    --dark18:#2e2e2e;$dark18:var(--dark18);
+    --grey:#696969;    $grey :var(--grey);
+    --c1:#f6eb41;    $c1 :var(--c1);
+    --c2:green;    $c2 :var(--c2);
+    --c3:blue;    $c3 :var(--c3);
+    --pad:46px;    $pad:var(--pad);
+    /////////////////////
+    background: $light;
+    color: $dark;
+    nav{
+     position: fixed;
+     left:15vw;
+     top: 28vh;
+     
+     a{
+        display: block;padding: 12px;
+        //text-decoration: none;
+        color:$dark;
+        font-size: 16pt;
+        &:focus{
+        color:$c1;
+
+        }
+        &.active{
+            color: $c1;
+        }
+     }
+    }
+    >div{
+    
+        width: 100vw;height: 100vh;
+        padding:4vh 4vw;
+
+    
+        .bg{
+        display:flex;flex-direction: column;max-height:658px ;
+        margin-left: auto;
+        width: 70vw;
+        height: 92vh;
+        background:$c1;
+        .h1{
+            padding-top: 32px;
+            margin-left: -82px;
+            font-size: 52pt;
+            font-weight: bold;
+            color:$dark;
+            font-family: 'Playfair Display', serif;
+
+
+        }
+        p{
+            width: 70%;
+            padding: $pad;
+
+        }
+        #contact{
+            font-size: 12pt;
+            padding: $pad;
+            margin-top:auto;
+            line-height: 17pt;
+            ul{
+                padding: 0px;
+                list-style: none;
+                 }
+           
+        }
+        }
+
+    } 
+    #projects{
+        border-left: 1pt solid $c1;
+        margin-left: auto;margin-bottom: 80px;
+            height:auto;
+            width: 70vw;
+        >div{
+        }
+        h1{
+            font-size: 28pt;
+            font-weight: bold;
+            color:$dark;
+            font-family: 'Playfair Display', serif;
+        }
+        h4{
+            padding:12px 26px;margin:0;
+            font-weight: normal;
+            cursor: pointer;
+            &:hover{
+                background-color: $c1;
+            }
+        }
+    }   
+
+
+}
