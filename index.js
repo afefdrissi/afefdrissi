@@ -30,17 +30,20 @@ ji.onload=function(){
 }*/
 ////////////
 var myinfo={"projects":[{"Responsive Web Design Projects":[
-    {"name":"Tribute Page","url":"","pic":"","description":""},
-    {"name":"Product Landing Page","url":"","pic":"","description":""},
-    {"name":"Survery Form","url":"","pic":"","description":""},
+        {"name":"Product Landing Page","url":"","pic":"","description":""},
+        {"name":"Technical Documentation Page","url":"","pic":"","description":""},
+    
+    
     {"name":"Portfolio Template","url":"","pic":"","description":""},
-    {"name":"Technical Documentation Page","url":"","pic":"","description":""}
+    {"name":"Survery Form","url":"","pic":"","description":""},
+    {"name":"Tribute Page","url":"","pic":"","description":""}
+
 
 ],
 "Javascript Algorithms":[
-    {"name":"Roman Numeral Converter","url":"","pic":"","description":""},
-    {"name":"Palindrome Checker","url":"","pic":"","description":""},
-    {"name":"Caesars Cipher","url":"","pic":"","description":""},
+    {"name":"Roman Numeral Converter","url":"https://afefdrissi.github.io/jsAlgos/index.html#algo-3","pic":"","description":""},
+    {"name":"Palindrome Checker","url":"https://afefdrissi.github.io/jsAlgos/index.html#algo-1","pic":"","description":""},
+    {"name":"Caesars Cipher","url":"https://afefdrissi.github.io/jsAlgos/index.html#algo-2","pic":"","description":""},
     {"name":"Javascript Calculator","url":"","pic":"","description":""},
     {"name":"100 Doors","url":"","pic":"","description":""}
 
@@ -56,7 +59,9 @@ projectsc.forEach(x1=>{
     let projectsContainer_div=cEle("div");
    x[x1].forEach(x=>{
     let projectName_h4=cEle("h4",x.name);
-    let project_div=cEle("div",[projectName_h4]);
+    let project_a=cEle("a",[projectName_h4]);
+    project_a.href=x.url;
+    let project_div=cEle("div",[project_a]);
 
        projectsContainer_div.appendChild(project_div);
    })

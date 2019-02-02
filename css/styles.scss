@@ -19,7 +19,7 @@ body{
     --dark18:#2e2e2e;$dark18:var(--dark18);
     --grey:#696969;    $grey :var(--grey);
     --c1:#f6eb41;    $c1 :var(--c1);
-    --c2:green;    $c2 :var(--c2);
+    --c2:#464343;    $c2 :var(--c2);
     --c3:blue;    $c3 :var(--c3);
     --pad:46px;    $pad:var(--pad);
     /////////////////////
@@ -98,6 +98,16 @@ body{
             color:$dark;
             font-family: 'Playfair Display', serif;
         }
+        a{
+        
+            //text-decoration: none;
+            color:$c2;
+            
+
+            &.active{
+                color: $dark;
+            }
+         }
         h4{
             padding:12px 26px;margin:0;
             font-weight: normal;

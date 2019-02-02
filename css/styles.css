@@ -22,7 +22,7 @@ body {
   --dark18:#2e2e2e;
   --grey:#696969;
   --c1:#f6eb41;
-  --c2:green;
+  --c2:#464343;
   --c3:blue;
   --pad:46px;
   background: var(--light);
@@ -110,6 +110,14 @@ body {
   font-weight: bold;
   color: var(--dark);
   font-family: 'Playfair Display', serif;
+}
+
+.theme #projects a {
+  color: var(--c2);
+}
+
+.theme #projects a.active {
+  color: var(--dark);
 }
 
 .theme #projects h4 {
