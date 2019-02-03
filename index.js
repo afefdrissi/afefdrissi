@@ -29,12 +29,17 @@ ji.onload=function(){
   });
 }*/
 ////////////
-var myinfo={"projects":[{"Responsive Web Design Projects":[
-        {"name":"Product Landing Page","url":"","pic":"","description":""},
-        {"name":"Technical Documentation Page","url":"","pic":"","description":""},
+var myinfo={"objectif":["/I'am Afef Drissi",
+"Je suis Afef Drissi","Je suis actuellement à la recherche d'un poste dans le domaine de développement/design web. Je maitrise les technologies du developpement web, Ainsi que les outils de conception graphique",
+"/I design and build websites using HTML5, SASS and Vanilla JS",
+
+      ],
+  "projects":[{"Responsive Web Design Projects":[
+        {"name":"Product Landing Page","url":"https://afefdrissi.github.io/plp","pic":"","description":""},
+        {"name":"Technical Documentation Page","url":"https://afefdrissi.github.io/tdp/","pic":"","description":""},
     
     
-    {"name":"Portfolio Template","url":"","pic":"","description":""},
+    {"name":"Portfolio Template","url":"https://afefdrissi.github.io/pt/","pic":"","description":""},
     {"name":"Survery Form","url":"","pic":"","description":""},
     {"name":"Tribute Page","url":"","pic":"","description":""}
 
@@ -47,8 +52,21 @@ var myinfo={"projects":[{"Responsive Web Design Projects":[
     {"name":"Javascript Calculator","url":"","pic":"","description":""},
     {"name":"100 Doors","url":"","pic":"","description":""}
 
+],
+"PSD TO HTML/CSS/JS":[
+  {"name":"Fusion","url":"https://afefdrissi.github.io/fusion/","pic":"","description":""},
+  {"name":"Mark","url":"https://afefdrissi.github.io/mark/","pic":"","description":""}
+
 ]
 }]};
+var objectif=document.getElementById("objectif");
+myinfo.objectif.forEach(x=>{
+  if(x[0]!='/'){
+    let p=cEle("p",x+'.');
+objectif.appendChild(p);
+  }
+
+})
 var projectsection=document.getElementById("projects");
 myinfo.projects.forEach(x=>{
    var projectsc=Object.keys(x);
@@ -58,12 +76,13 @@ projectsc.forEach(x1=>{
     let h1=cEle("h1",x1);
     let projectsContainer_div=cEle("div");
    x[x1].forEach(x=>{
-    let projectName_h4=cEle("h4",x.name);
+     if (x.url!="")
+   { let projectName_h4=cEle("h4",x.name);
     let project_a=cEle("a",[projectName_h4]);
     project_a.href=x.url;
     let project_div=cEle("div",[project_a]);
 
-       projectsContainer_div.appendChild(project_div);
+       projectsContainer_div.appendChild(project_div);}
    })
 
     let div=cEle("div",[h1,projectsContainer_div]);console.log()

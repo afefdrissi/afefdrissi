@@ -80,7 +80,7 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.theme > div .bg p {
+.theme > div .bg #objectif {
   width: 70%;
   padding: var(--pad);
 }
