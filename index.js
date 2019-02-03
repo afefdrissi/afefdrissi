@@ -39,7 +39,7 @@ var myinfo={"objectif":["/I'am Afef Drissi",
         {"name":"Technical Documentation Page","url":"https://afefdrissi.github.io/tdp/","pic":"","description":""},
     
     
-    {"name":"Portfolio Template","url":"https://afefdrissi.github.io/pt/","pic":"","description":""},
+    {"name":"Portfolio Template","url":"https://afefdrissi.github.io/pt/index.html","pic":"","description":""},
     {"name":"Survery Form","url":"","pic":"","description":""},
     {"name":"Tribute Page","url":"","pic":"","description":""}
 
