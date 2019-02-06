@@ -14,34 +14,61 @@ body{
 
 }
 .theme{
+    --s0:12pt;$s0:var(--s0);
+    --s1:14pt;$s1:var(--s1);
+    --s2:52pt;$s2:var(--s2);
+    @media only screen and (max-width: 600px) {
+        --s2:36pt;
+            
+                }
     --light:#fff;$light :var(--light);
     --dark:#1f1f1f; $dark :var(--dark);
     --dark18:#2e2e2e;$dark18:var(--dark18);
-    --grey:#696969;    $grey :var(--grey);
+    --grey:#f8f8f8;    $grey :var(--grey);
     --c1:#f6eb41;    $c1 :var(--c1);
     --c2:#464343;    $c2 :var(--c2);
     --c3:blue;    $c3 :var(--c3);
-    --pad:46px;    $pad:var(--pad);
+    --pad:20px 46px;    $pad:var(--pad);
+    @media only screen and (max-width: 600px) {
+    
+            --pad:12px;
+                }
     /////////////////////
     background: $light;
     color: $dark;
     nav{
      position: fixed;
-     left:15vw;
-     top: 28vh;
-     
+     left:5vw;
+     bottom: 60vh;
+     @media only screen and (max-width: 600px) {
+        left: 0;right: 0;
+        display: flex;
+        bottom: 0;
+        background-color: $c1;
+        border-top:1pt solid $dark;
+        justify-content: center;
+
+                }
      a{
         display: block;padding: 12px;
         //text-decoration: none;
         color:$dark;
         font-size: 16pt;
+
+
         &:focus{
-        color:$c1;
+        background-color:$c1;
 
         }
         &.active{
             color: $c1;
         }
+             @media only screen and (max-width: 600px) {
+         padding: 20px;
+         &.active{
+            color: $c3;
+        }
+     }
      }
     }
     >div{
@@ -55,11 +82,21 @@ body{
         margin-left: auto;
         width: 70vw;
         height: 92vh;
-        background:$c1;
+            @media only screen and (max-width: 600px) {
+        width: 84vw;
+
+            }
+                background:$c1;
+
         .h1{
             padding-top: 32px;
             margin-left: -82px;
-            font-size: 52pt;
+            @media only screen and (max-width: 600px) {
+                margin-left: -26px;
+            padding-top: 0px;
+                    
+                        }
+            font-size: $s2;
             font-weight: bold;
             color:$dark;
             font-family: 'Playfair Display', serif;
@@ -69,6 +106,13 @@ body{
         #objectif{
             width: 70%;
             padding: $pad;
+            @media only screen and (max-width: 600px) {
+                
+                width: 80vw;
+                position: relative;
+                top:0px;
+                left:0vw;
+                        }
             p{
             
             }
@@ -79,6 +123,13 @@ body{
             padding: $pad;
             margin-top:auto;
             line-height: 17pt;
+            @media only screen and (max-width: 600px) {
+            
+                width: 100vw;
+                position: relative;
+                top:0px;
+            margin-top:0;
+                        }
             ul{
                 padding: 0px;
                 list-style: none;
@@ -93,6 +144,10 @@ body{
         margin-left: auto;margin-bottom: 80px;
             height:auto;
             width: 70vw;
+            @media only screen and (max-width: 600px) {
+                width: 90vw;
+            }
+            
         >div{
         }
         h1{
@@ -122,4 +177,6 @@ body{
     }   
 
 
+
 }
+    

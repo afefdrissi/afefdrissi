@@ -34,7 +34,13 @@ var myinfo={"objectif":["/I'am Afef Drissi",
 "/I design and build websites using HTML5, SASS and Vanilla JS",
 
       ],
-  "projects":[{"Responsive Web Design Projects":[
+  "projects":[{
+    "PSD TO HTML/CSS/JS":[
+      {"name":"Fusion","url":"https://afefdrissi.github.io/fusion/","pic":"","description":""},
+      {"name":"Mark","url":"https://afefdrissi.github.io/mark/","pic":"","description":""}
+    
+    ],
+    "Responsive Web Design Projects":[
         {"name":"Product Landing Page","url":"https://afefdrissi.github.io/plp","pic":"","description":""},
         {"name":"Technical Documentation Page","url":"https://afefdrissi.github.io/tdp/","pic":"","description":""},
     
@@ -53,11 +59,7 @@ var myinfo={"objectif":["/I'am Afef Drissi",
     {"name":"100 Doors","url":"","pic":"","description":""}
 
 ],
-"PSD TO HTML/CSS/JS":[
-  {"name":"Fusion","url":"https://afefdrissi.github.io/fusion/","pic":"","description":""},
-  {"name":"Mark","url":"https://afefdrissi.github.io/mark/","pic":"","description":""}
 
-]
 }]};
 var objectif=document.getElementById("objectif");
 myinfo.objectif.forEach(x=>{

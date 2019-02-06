@@ -17,22 +17,53 @@ body {
 }
 
 .theme {
+  --s0:12pt;
+  --s1:14pt;
+  --s2:52pt;
   --light:#fff;
   --dark:#1f1f1f;
   --dark18:#2e2e2e;
-  --grey:#696969;
+  --grey:#f8f8f8;
   --c1:#f6eb41;
   --c2:#464343;
   --c3:blue;
-  --pad:46px;
+  --pad:20px 46px;
   background: var(--light);
   color: var(--dark);
 }
 
+@media only screen and (max-width: 600px) {
+  .theme {
+    --s2:36pt;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .theme {
+    --pad:12px;
+  }
+}
+
 .theme nav {
   position: fixed;
-  left: 15vw;
-  top: 28vh;
+  left: 5vw;
+  bottom: 60vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .theme nav {
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 0;
+    background-color: var(--c1);
+    border-top: 1pt solid var(--dark);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .theme nav a {
@@ -43,11 +74,20 @@ body {
 }
 
 .theme nav a:focus {
-  color: var(--c1);
+  background-color: var(--c1);
 }
 
 .theme nav a.active {
   color: var(--c1);
+}
+
+@media only screen and (max-width: 600px) {
+  .theme nav a {
+    padding: 20px;
+  }
+  .theme nav a.active {
+    color: var(--c3);
+  }
 }
 
 .theme > div {
@@ -71,13 +111,26 @@ body {
   background: var(--c1);
 }
 
+@media only screen and (max-width: 600px) {
+  .theme > div .bg {
+    width: 84vw;
+  }
+}
+
 .theme > div .bg .h1 {
   padding-top: 32px;
   margin-left: -82px;
-  font-size: 52pt;
+  font-size: var(--s2);
   font-weight: bold;
   color: var(--dark);
   font-family: 'Playfair Display', serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .theme > div .bg .h1 {
+    margin-left: -26px;
+    padding-top: 0px;
+  }
 }
 
 .theme > div .bg #objectif {
@@ -85,11 +138,29 @@ body {
   padding: var(--pad);
 }
 
+@media only screen and (max-width: 600px) {
+  .theme > div .bg #objectif {
+    width: 80vw;
+    position: relative;
+    top: 0px;
+    left: 0vw;
+  }
+}
+
 .theme > div .bg #contact {
   font-size: 12pt;
   padding: var(--pad);
   margin-top: auto;
   line-height: 17pt;
+}
+
+@media only screen and (max-width: 600px) {
+  .theme > div .bg #contact {
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    margin-top: 0;
+  }
 }
 
 .theme > div .bg #contact ul {
@@ -103,6 +174,12 @@ body {
   margin-bottom: 80px;
   height: auto;
   width: 70vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .theme #projects {
+    width: 90vw;
+  }
 }
 
 .theme #projects h1 {
