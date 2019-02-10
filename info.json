@@ -1,17 +1,33 @@
-{"projects":[{"Responsive Web Design Projects":[
-    {"name":"Tribute Page","url":"","pic":"","description":""},
-    {"name":"Product Landing Page","url":"","pic":"","description":""},
-    {"name":"Survery Form","url":"","pic":"","description":""},
-    {"name":"Portfolio Template","url":"","pic":"","description":""},
-    {"name":"Technical Documentation Page","url":"","pic":"","description":""}
-
-],
-"Javascript Algorithms":[
-    {"name":"Roman Numeral Converter","url":"","pic":"","description":""},
-    {"name":"Palindrome Checker","url":"","pic":"","description":""},
-    {"name":"Caesars Cipher","url":"","pic":"","description":""},
-    {"name":"Javascript Calculator","url":"","pic":"","description":""},
-    {"name":"100 Doors","url":"","pic":"","description":""}
-
-]
-}]}
+{"objectif":["/I'am Afef Drissi","Je suis Afef Drissi",
+    "Vous pouvez trouver ici des projets Web que j'ai récemment créés avec JS, SASS / CSS3 et HTML5.",
+    "/Je suis actuellement à la recherche d'un poste dans le domaine de développement/design web. Je maitrise les technologies du developpement web, Ainsi que les outils de conception graphique",
+    "/I design and build websites using HTML5, SASS and Vanilla JS"
+    
+          ],
+      "projects":[{
+        "PSD TO HTML/CSS/JS":[
+          {"name":"Fusion","url":"https://afefdrissi.github.io/fusion/","pic":"","description":""},
+          {"name":"Mark","url":"https://afefdrissi.github.io/mark/","pic":"","description":""}
+        
+        ],
+        "Responsive Web Design Projects":[
+            {"name":"Product Landing Page","url":"https://afefdrissi.github.io/plp","pic":"","description":""},
+            {"name":"Technical Documentation Page","url":"https://afefdrissi.github.io/tdp/","pic":"","description":""},
+        
+        
+        {"name":"Portfolio Template","url":"https://afefdrissi.github.io/pt/index.html","pic":"","description":""},
+        {"name":"Survery Form","url":"","pic":"","description":""},
+        {"name":"Tribute Page","url":"","pic":"","description":""}
+    
+    
+    ],
+    "Javascript Algorithms":[
+        {"name":"Roman Numeral Converter","url":"https://afefdrissi.github.io/jsAlgos/index.html#algo-3","pic":"","description":""},
+        {"name":"Palindrome Checker","url":"https://afefdrissi.github.io/jsAlgos/index.html#algo-1","pic":"","description":""},
+        {"name":"Caesars Cipher","url":"https://afefdrissi.github.io/jsAlgos/index.html#algo-2","pic":"","description":""},
+        {"name":"Javascript Calculator","url":"","pic":"","description":""},
+        {"name":"100 Doors","url":"","pic":"","description":""}
+    
+    ]
+    
+    }]}

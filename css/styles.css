@@ -92,7 +92,6 @@ body {
 
 .theme > div {
   width: 100vw;
-  height: 100vh;
   padding: 4vh 4vw;
 }
 
@@ -107,7 +106,6 @@ body {
   max-height: 658px;
   margin-left: auto;
   width: 70vw;
-  height: 92vh;
   background: var(--c1);
 }
 

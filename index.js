@@ -16,21 +16,10 @@ for (var i = 0; i < btns.length; i++) {
 }
 currenLink("nav-link","active","nav-menu");
 
-///////////////
-/*ji= new XMLHttpRequest();
-ji.open("GET",'info.json',true);
-ji.send();
-ji.onload=function(){
-  info=JSON.parse(ji.responseText);
-  info.projects.forEach(element => {
-    project=Object.keys(element);
-    console.log(project)
-      
-  });
-}*/
-////////////
-var myinfo={"objectif":["/I'am Afef Drissi",
-"Je suis Afef Drissi","Je suis actuellement à la recherche d'un poste dans le domaine de développement/design web. Je maitrise les technologies du developpement web, Ainsi que les outils de conception graphique",
+
+var myinfo={"objectif":["/I'am Afef Drissi","Je suis Afef Drissi",
+"Vous pouvez trouver ici des projets Web que j'ai récemment créés avec JS, SASS / CSS3 et HTML5.",
+"/Je suis actuellement à la recherche d'un poste dans le domaine de développement/design web. Je maitrise les technologies du developpement web, Ainsi que les outils de conception graphique",
 "/I design and build websites using HTML5, SASS and Vanilla JS",
 
       ],
@@ -61,6 +50,15 @@ var myinfo={"objectif":["/I'am Afef Drissi",
 ],
 
 }]};
+///////////////
+ji= new XMLHttpRequest();
+ji.open("GET",'https://afefdrissi.github.io/afefdrissi/info.json',true);
+ji.send();
+ji.onload=function(){
+  myinfo=JSON.parse(ji.responseText);
+
+}
+////////////
 var objectif=document.getElementById("objectif");
 myinfo.objectif.forEach(x=>{
   if(x[0]!='/'){
